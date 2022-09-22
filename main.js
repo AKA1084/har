@@ -1,8 +1,9 @@
 "use strict";
 
 $(()=>{
+	
 
-	const API_BASE = "https://fontfamilies.000webhostapp.com/tsf/bbs";
+	const API_BASE = "https://vectoricons.000webhostapp.com/sky/tsfbbs";
 
 	const _fetch = async (url, fd) => { return await (await fetch(url, { method: "post", body: fd })).json(); };
 
