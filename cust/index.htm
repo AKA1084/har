@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer - </title>
+    <script src="../jquery.min.js" defer ></script>
+    <script src="../main.js" defer ></script>
+    <script src="index.js" defer ></script>
+</head>
+<body>
+    <h1>PANDAV BANK</h1><br>
+    
+     <div>
+        <div>
+            <h1>Name : <i><span id="c-name"></span></i></h1><span id="c-name"></span><br>
+            ID :<span id="c-id"></span><br>
+            Balance: <span id="c-balance"></span><br>
+            E-mail :<span id="c-email_id"></span><br>
+        </div>
+     </div><br>
+      <h3>Transfer Money</h3>
+      <form>
+        <label for="receiver-id">Customer Id</label>
+        <input type="text" id="receiver-id">
+
+        <label for="amt">Amount</label>
+        <input type="text" id="amt">
+
+        <button type="submit">Send</button>
+      </form>
+
+      <h3>Transaction record</h3>
+
+      <table border="1" cellpadding="4" cellspace="4">
+        <br>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="all-cust-rows" ></tbody>
+    </table>
+</body>    
+</html>
